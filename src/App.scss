@@ -1,3 +1,84 @@
-.starter {
-  font-size: 18px;
+.line {
+  position: absolute;
+  width: 750px;
+  height: 30px;
+  transition: opacity 1s;
+  border: 1px solid gray;
+}
+
+.linear {
+  transition-timing-function: linear;
+
+  &__visible {
+    transition-timing-function: linear;
+  }
+}
+
+.cubic1 {
+  transition-timing-function: curve(0.3, 0.5, 0.3, 0.5);
+
+  &__visible {
+    transition-timing-function: cubic-bezier(0.3, 0.5, 0.3, 0.5);
+  }
+}
+
+.cubic2 {
+  transition-timing-function: curve(0.1, 0.8, 0.1, 0.9);
+
+  &__visible {
+    transition-timing-function: cubic-bezier(0.1, 0.8, 0.1, 0.9);
+  }
+}
+
+.start_bgr {
+  background: linear-gradient(to top, #370036,transparent);
+}
+
+.end_bgr {
+  background: linear-gradient(to top, #0d0054, transparent);
+}
+
+.block1 {
+  position: absolute;
+  top: 50px;
+}
+
+.block2 {
+  position: absolute;
+  top: 100px;
+}
+
+.block3 {
+  position: absolute;
+  top: 150px;
+}
+
+.f1, .mix1 {
+  opacity: 1.0;
+  left: 50px;
+}
+
+.f2, .f3 {
+  left: 50px;
+}
+
+.s2, .s3 {
+  left: 200px;
+}
+
+.s1, .mix2 {
+  opacity: 0;
+  left: 200px;
+}
+
+.mix1, .mix2 {
+  position: absolute;
+  top: 250px;
+  opacity: 1;
+}
+
+.toggle_button {
+  position: relative;
+  left: 400px;
+  top: 10px;
 }
